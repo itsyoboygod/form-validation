@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/phoneMask.js" defer></script>
+    <script src="./js/app.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Form</h1>
+    </header>
+    <main>
+        <form id="myForm" data-form="form" name="formAuth" method="post" action="/users">
+            <div class="form-content">
+                <label for="name">Nome</label>
+                <input type="text" placeholder="your name" autocomplete="current-username" title="Your Name" id="name"
+                    name="name" value="" data-name="dta-name">
+                <small class="error">Error msg</small>
+                <span class="error"></span>
+            </div>
+            <div class="form-content">
+                <label for="email">Email</label>
+                <input type="email" placeholder="email@example.com" autocomplete="current-useremail" title="Email"
+                    id="email" email="email" value="" data-email="dta-email">
+                <small>Error msg</small>
+                <span class="error"></span>
+            </div>
+            <div class="form-content">
+                <label for="phone">Number</label>
+                <input type="tel" placeholder="(+XX)9 XXXX-XXXX" autocomplete="current-usernumber" id="phone"
+                    title="Phone" maxlength="15" data-number="dta-number">
+                <small>Error msg</small>
+                <span class="error"></span>
+            </div>
+            <div class="form-content">
+                <label for="password">Password</label>
+                <input type="password" id="password" autocomplete="current-password" placeholder="password" title="senha">
+                <small>Error msg</small>
+                <span class="error"></span>
+            </div>
+            <div class="form-submit">
+                <input type="submit" id="submit" value="Submit">
+                <!-- <small class="warning">⚠</small> -->
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/profile.js" defer></script>
+    <script src="./js/delModal.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>FORM DATA:</h1>
+    </header>
+    <main>
+        <div class="profile-container">
+            <dialog id="modal">
+                <h3>Are you sure you want to DELETE <span data-name="dta_name"></span> ?</h3>
+                <button class="close-button" id="close-modal">✕</button>
+                <ul id="ul_del_list" role="list">
+                    <li role="heading">
+                        <span>#id</span>
+                        <span>Nome</span>
+                        <span>Email</span>
+                        <span>Phone</span>
+                        <span>Password</span>
+                    </li>
+                </ul>
+                <div class="modal-btns-bottom">
+                    <button id="accept">YES, DELETE</button>
+                    <button id="cancel">cancel</button>
+                </div>
+            </dialog>
+            <ul id="ul_list" role="list">
+                <li role="heading">
+                    <span>#id</span>
+                    <span>Nome</span>
+                    <span>Email</span>
+                    <span>Phone</span>
+                    <span>Password</span>
+                    <span>Del</span>
+                    <span>Edit</span>
+                </li>
+            </ul>
+        </div>
+        <div id="id_div-footer">
+            <input type="search" value="" id="id_search" placeholder="search..">
+            <button id="load-previous" class="btns">⟨</button>
+            <span id="pagNum"></span>
+            <span id="pagTot"></span>
+            <button id="load-next" class="btns">⟩</button>
+        </div>
+    </main>
+</body>
+
+</html>
